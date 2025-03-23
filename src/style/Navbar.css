@@ -1,0 +1,102 @@
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(180, 57, 57);
+}
+
+.ham1 {
+    display: inline-block; 
+    position: fixed; 
+    top: 80px; 
+    left: 0;
+    z-index: 100; /* Ensure this is high enough to be on top */
+    width: 50%; 
+    height: 100vh;
+    background-color: #222020; 
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px rgba(211, 203, 203, 0.2);
+    border-radius: 2%;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 98%;
+    height: auto;
+    z-index: 10; /* Lower than .ham1 */
+    display: flex;  
+    margin: 0px 10px;
+    justify-content: space-between;
+}
+
+button {
+    width: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.hamburger {
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    height: 100%; 
+    margin: auto;
+    padding: 0;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px; 
+}
+
+a:hover {
+    color: rgb(150, 75, 75);
+    transition-duration: 0.5s;
+}
+
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+    transform: translateY(50%);
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .dropdown {
+        width: 99%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button {
+        width: 10px;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .dropdown {
+        display: flex;
+        justify-content: space-between;
+        width: 93%;
+    }
+    
+    button {
+        width: 10px;
+        background-color: white;
+    }
+}

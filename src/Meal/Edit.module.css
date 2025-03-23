@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.Meal{
+    display:flex;
+    flex-direction: row;
+}
+.Mealplanner {
+    display: flex;
+    border: none;
+    height: auto;
+    flex-direction: column; 
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.Mealimg {
+    border: none;
+    border-radius: 50%;
+    width: 50%;
+    max-width: 100px; 
+    height: auto;
+}
+.DownloadButton{
+    padding: 10px;
+    font-size: 1.0em;
+    width: 220px;
+ color: #ffffff;
+ font-weight: bold;
+    margin: 10px;
+    background-color: red;
+    white-space: nowrap;
+    border: none;
+    border-radius: 10%;
+}
+table {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 10px rgb(167, 47, 47);
+}
+
+th, td {
+    border: 1px solid rgb(167, 47, 47);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(133, 48, 48);
+    color: #ffffff;
+}
+
+.action {
+    display: flex;
+    border: none;
+    height: 98%;
+    justify-content: space-around;
+}
+.Empty{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    color: black;
+    font-size: 2.0em;
+}
+.fix{
+    margin-top: 10px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.check{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .Mealplanner {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .Mealimg {
+        max-width: 80px; /* Reduce max width of images */
+    }
+
+    th, td {
+        padding: 8px; /* Reduce padding in table cells */
+    }
+}
+
+@media (max-width: 480px) {
+    .Mealplanner {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        width: 100%; /* Full width */
+    }
+
+    .Mealimg {
+        max-width: 60px; /* Further reduce image size */
+    }
+
+    th, td {
+        font-size: 14px; /* Smaller font size for better fit */
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .action {
+        flex-direction: row;
+        align-items: center; 
+    }
+}
+button {
+    border: none; 
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    font-size: 0.7em;
+    text-align: center; 
+}
+
+.Add {
+    background-color: green;
+    color: #ffffff;
+    width: 50px;
+}
+
+
+.Delete {
+    background-color: red; 
+    color: #fccdcd;
+    width: 60px;
+    margin: auto;
+    height: 10vh;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    margin: auto;
+    width: 98%;
+    margin-bottom: 10px;
+}
+
+.recipecards {
+    display: grid;
+    width: 90%;
+    margin-top: 10px;
+    gap: 2px;
+    margin: auto;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    border-radius:10% ;
+    background-color: rgb(167, 47, 47);
+    width: 100%;
+}
+.img {
+    width: 40%;
+    object-position: center;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    z-index: 2px;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(136, 55, 55);
+}
+
+
+
+.groceryContainer {
+    margin: auto;
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.groceryTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 10px rgba(167, 47, 47, 0.5);
+}
+
+.tableHeader {
+    background-color: rgb(133, 48, 48);
+    color: #ffffff;
+    padding: 10px;
+}
+
+.tableCell {
+    border: 1px solid rgb(167, 47, 47);
+    padding: 10px;
+    text-align: center;
+}
+
+.ingredientImage {
+    width: 50px; 
+    height: auto; 
+    border-radius: 40%;
+}
+
+.actionButton1 {
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px; 
+    width: 50px;
+}
+.actionButton2 {
+    border: none;
+    background-color: orange;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px; 
+    width: 50px;
+}
+.actionButton3 {
+    border: none;
+    background-color: red;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px; 
+    width: 50px;
+}
+
+.actionButton:hover {
+    background-color: rgba(167, 47, 47, 0.8); 
+}
+
+.generateButton {
+    border: none;
+    background-color: blue; 
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 60px;
+}
+
+.generateButton:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+}
