@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import style from './contact.module.css';
-
 function Contact() {
     return (
         <div className={style.body}>
@@ -21,7 +21,10 @@ function Contact() {
                         <label htmlFor='comment'>Comment:</label>
                         <textarea id='comment' placeholder='Input your comment' />
                     </div>
-                    <button type='submit' className={style.btn}>Submit</button>
+
+                    <Link to='//http:seyioladimeji790@gmail'>
+                    <button type='submit'  className={style.btn}>Submit</button>
+                    </Link>
                     <div className={style.details1}>
                     <div className={style.details}>
                     <h2 style={{color:'white'}}>Email:</h2>

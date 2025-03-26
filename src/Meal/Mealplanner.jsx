@@ -55,7 +55,7 @@ function Mealplanner({ add = [], setAdd }) {
                 if (data.section === 'body' && data.column.index === 1) {
                     const meal = mealsWithImages[data.row.index];
                     if (meal?.img) {
-                        const imgSize = 25;
+                        const imgSize = 20;
                         const padding = 10;
 
                         doc.addImage(meal.img, 'PNG', data.cell.x + padding, data.cell.y + padding, imgSize, imgSize);
@@ -63,7 +63,7 @@ function Mealplanner({ add = [], setAdd }) {
                 }
             },
             margin: { top: 10 },
-            styles: { cellPadding: 5, minCellHeight: 40 },
+            styles: { cellPadding: 5, minCellHeight: 30 },
         });
 
         doc.save("meal_planner.pdf");

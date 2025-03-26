@@ -8,6 +8,7 @@ function Navbar() {
 
     const updateham = () => {
         setHamburger(!hamburger);
+        setHamburger.target.style='autoload'
     };
 
     useEffect(() => {

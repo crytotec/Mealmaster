@@ -5,7 +5,6 @@ import Recipelibrary from "./Meal/Recipelibrary";
 import Grocery from "./Meal/Grocery";
 import About from './About/About';
 import Contact from "./Contact/Contact";
-import FAQ from "./FAQ/FAQ";
 import Nav from './Navbar';
 import Footer from './Footer';
 import './Index.css';
@@ -35,7 +34,6 @@ function App() {
                 <Route element={<Grocery />} path="/Grocery" />
                 <Route element={<About />} path="/About" />
                 <Route element={<Contact />} path="/Contact" />
-                <Route element={<FAQ />} path="/FAQ" />
             </Routes>
             <Footer />
         </BrowserRouter>
