@@ -16,7 +16,7 @@ function App() {
         return savedMeals ? JSON.parse(savedMeals) : [];
     });
 
-    
+//    use    
     useEffect(() => {
         if (add.length > 0) {
             localStorage.setItem("meals", JSON.stringify(add));
