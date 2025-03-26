@@ -7,7 +7,7 @@ import About from './About/About';
 import Contact from "./Contact/Contact";
 import Nav from './Navbar';
 import Footer from './Footer';
-import './Index.css';
+import './index.css';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         return savedMeals ? JSON.parse(savedMeals) : [];
     });
 
-    // Sync `add` state with localStorage
+    
     useEffect(() => {
         if (add.length > 0) {
             localStorage.setItem("meals", JSON.stringify(add));
