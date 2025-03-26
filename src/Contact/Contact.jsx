@@ -20,8 +20,9 @@ function Contact() {
                     <div className={style.comment}>
                         <label htmlFor='comment'>Comment:</label>
                         <textarea id='comment' placeholder='Input your comment' />
-                    </div>
-
+                    </div> 
+                    
+ 
                     <Link to='//http:seyioladimeji790@gmail'>
                     <button type='submit'  className={style.btn}>Submit</button>
                     </Link>
