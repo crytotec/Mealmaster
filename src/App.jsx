@@ -15,6 +15,8 @@ function App() {
         const savedMeals = localStorage.getItem("meals");
         return savedMeals ? JSON.parse(savedMeals) : [];
     });
+
+    // Sync `add` state with localStorage
     useEffect(() => {
         if (add.length > 0) {
             localStorage.setItem("meals", JSON.stringify(add));
