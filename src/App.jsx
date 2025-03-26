@@ -7,7 +7,7 @@ import About from './About/About';
 import Contact from "./Contact/Contact";
 import Nav from './Navbar';
 import Footer from './Footer';
-import './style.css';
+import './index.css';
 import { useState, useEffect } from 'react';
 
 function App() {
